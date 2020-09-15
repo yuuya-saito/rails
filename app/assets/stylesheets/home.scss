@@ -4,6 +4,18 @@
     box-sizing: border-box;
   }
   
+@media(max-width:1000px){
+  header {
+    width: 50%;
+  }
+}
+
+@media(max-width:670px){
+  header {
+    width:100%;
+  }
+}
+
   html {
     font: 100%/1.5 'Avenir Next', 'Hiragino Sans', sans-serif;
     line-height: 1.7;
@@ -63,10 +75,10 @@
   
   /* ヘッダー ================================ */
   header {
-    height: 64px;
-    position: absolute;
-    z-index: 1;
+    height: 65px;
     width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+  }
   }
   
   .header-logo {
@@ -133,6 +145,8 @@
   
   .top-message {
     position: relative;
+    float: left;
+    padding: 33px 20px;
   }
   
   .top-main h2 {
