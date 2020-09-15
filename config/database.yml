@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: railsSpace_production
-  username: railsSpace
-  password: <%= ENV['RAILSSPACE_DATABASE_PASSWORD'] %>
+  database: postgresql
+  encoding: unicode
+  pool: 5
